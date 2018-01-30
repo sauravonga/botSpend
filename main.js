@@ -1,9 +1,10 @@
 
 
 var commandType = "";
+var cmdArr;
 
 function readCommand(command){
-    var cmdArr = command.split(/\s+/);
+    cmdArr = command.split(/\s+/);
 
     if ( cmdArr.indexOf('addt') > -1){
         commandType = "addTran";
